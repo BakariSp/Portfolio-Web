@@ -1,0 +1,10 @@
+.main {
+  padding: 40px;
+  text-align: center;
+}
+
+.imageContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
