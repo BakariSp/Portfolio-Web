@@ -68,7 +68,7 @@ export default function PerceptarPage() {
             How can we integrate natural interactions into a spatial design tool to enable users to build worlds with satisfaction?
           </p>
           <p>
-            The tool should enhance the user's creative experience by providing seamless, intuitive interaction methods that 
+            The tool should enhance the user&apos;s creative experience by providing seamless, intuitive interaction methods that 
             feel aligned with how humans naturally interact with physical space.
           </p>
         </div>
