@@ -1,5 +1,4 @@
-import Header from '../components/nav_bar/header';
-import HomePage from '../pages/home/homepage';
+import HomePage from './home/page';
 
 const Home = () => {
   return (

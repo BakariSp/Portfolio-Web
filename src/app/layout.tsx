@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css"; 
-import Header from '../components/nav_bar/header';
+import NavBar from '../components/navbar/nav-bar';
+import { layoutConfig } from '@/lib/layout-config';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,9 +29,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans`}>
         <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-1">
-            {children}
+          <main className={`flex-1 ${layoutConfig.contentMargin}`}>
+            <NavBar />
+            <div className={`${layoutConfig.containerMax} mx-auto`}>
+              {children}
+            </div>
           </main>
         </div>
       </body>

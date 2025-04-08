@@ -12,30 +12,38 @@ import {
   navigationMenuTriggerStyle,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
+import { layoutConfig } from "@/lib/layout-config"
 
-const Header = () => {
+const NavBar = () => {
   return (
-    <header className="flex justify-between items-center py-4 px-4 sm:px-8 md:px-16 lg:px-32">
-      <div className="font-bold text-lg">Creative Engineer Here!</div>
+    <header className={`flex justify-between items-center py-4 ${layoutConfig.containerMax}`}>
+      <div className="font-bold text-2xl"><Link href="/" legacyBehavior passHref>Linghang Cai</Link></div>
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="/" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Portfolio
+            <Link href='/projects' legacyBehavior passHref>
+              <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-lg`}>
+                Projects
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="/practice" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-lg`}>
                 Practice
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
+            <Link href="/about-me" legacyBehavior passHref>
+              <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-lg`}>
+                About Me
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
             <Link href="/contact" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-lg`}>
                 Contact
               </NavigationMenuLink>
             </Link>
@@ -46,4 +54,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;
