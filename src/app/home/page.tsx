@@ -5,7 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useState } from 'react';
 import { ProjectGrid } from '@/components/projects/project-card';
 import projects from '@/data/projects.json';
-import { layoutConfig } from '@/lib/layout-config';
 
 const HomePage = () => {
   const [isHovered, setIsHovered] = useState(false);

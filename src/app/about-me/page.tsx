@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import styles from './about-me.module.css';
 import { layoutConfig } from '@/lib/layout-config';
 
 export default function AboutMe() {

@@ -54,16 +54,16 @@ export default function PerceptarPage() {
         
         <div className={styles.research}>
           <h2>Research Focus</h2>
-          <h3>Defining 'Natural Interaction' in Virtual Spatial Design</h3>
+          <h3>Defining &apos;Natural Interaction&apos; in Virtual Spatial Design</h3>
           <p>
-            What are the design and research avenues for creating more 'natural interactions' in virtual spatial design?
+            What are the design and research avenues for creating more &apos;natural interactions&apos; in virtual spatial design?
           </p>
           <p>
             This involves exploring how users can engage with virtual environments in ways that feel intuitive and satisfying,
             emphasizing the natural integration of human gestures, cognition, and technology.
           </p>
           
-          <h3>Applying 'Natural Interaction' to a Spatial Design Tool</h3>
+          <h3>Applying &apos;Natural Interaction&apos; to a Spatial Design Tool</h3>
           <p>
             How can we integrate natural interactions into a spatial design tool to enable users to build worlds with satisfaction?
           </p>

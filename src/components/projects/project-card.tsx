@@ -29,7 +29,7 @@ export function ProjectCard({
       )}>
         <div className="relative h-56 w-full overflow-hidden">
           <Image
-            src="/thumb-img.png" // Using the test image for all projects
+            src= {imageUrl || "/thumb-img.png"}
             alt={title}
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
