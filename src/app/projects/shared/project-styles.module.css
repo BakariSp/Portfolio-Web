@@ -1,0 +1,273 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 4rem;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.heroFullHeight {
+  height: 100vh;
+}
+
+.heroPartialHeight {
+  height: 70vh;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroContent {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 10;
+  max-width: 800px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); */
+}
+
+/* Content section */
+.content {
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.content h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #444;
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.content ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.content li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+/* Section styling */
+.section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Grid layouts */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Card styling */
+.card {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Tech stack tags */
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.techTag {
+  background: #e9e9e9;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Step styling for processes */
+.step {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid #0070f3;
+}
+
+.step h3 {
+  color: #0070f3;
+  margin-top: 0;
+}
+
+/* List styling */
+.featuresList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.featuresList li {
+  list-style-type: none;
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.featuresList li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #666;
+}
+
+/* Image containers */
+.imageContainer {
+  margin: 2rem 0;
+  width: 100%;
+  position: relative;
+}
+
+.contentImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.imageCaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Split sections */
+.splitSection {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.splitContent {
+  flex: 1;
+}
+
+.splitImage {
+  flex: 1;
+  text-align: center;
+}
+
+.sideImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Video wrapper */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+  }
+  
+  .content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .splitSection {
+    flex-direction: column;
+  }
+} 

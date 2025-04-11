@@ -9,6 +9,9 @@ export const layoutConfig = {
   // Container max widths with responsive behavior
   containerMax: "max-w-full md:max-w-5xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-10xl mx-auto",
   
+  // Main content padding (including bottom padding before footer)
+  mainPadding: "pb-16 md:pb-20 lg:pb-24",
+  
   // Grid gap values
   gridGap: "gap-4 md:gap-6 lg:gap-8",
   

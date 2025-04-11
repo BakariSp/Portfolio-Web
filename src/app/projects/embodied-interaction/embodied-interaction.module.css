@@ -1,3 +1,17 @@
+/* Import shared styles */
+@import '../shared/project-styles.module.css';
+
+/* Add any project-specific styles here */
+.heroImage {
+  opacity: 1;
+  height: 100%;
+}
+
+/* Override any shared styles if needed */
+.subtitle {
+  color: #ccc;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -13,25 +27,11 @@
   /* background-color: #fff; */
 }
 
-.heroImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 1;
-}
-
 .heroTitle {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  max-width: 800px;
-  margin-bottom: 2rem;
-  color: #ccc;
 }
 
 .content {
@@ -93,6 +93,32 @@
 .card h3 {
   margin-top: 0;
   color: #333;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.techTag {
+  background: #e9e9e9;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.step {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid #0070f3;
+}
+
+.step h3 {
+  color: #0070f3;
+  margin-top: 0;
 }
 
 @media (max-width: 768px) {

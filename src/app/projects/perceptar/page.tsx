@@ -4,21 +4,32 @@ import styles from './perceptar.module.css';
 export default function PerceptarPage() {
   return (
     <div className={styles.container}>
-      <div className={styles.videoWrapper}>
-        <iframe 
-          width="100%" 
-          height="100%" 
-          src="https://www.youtube.com/embed/vNHnjQEOBsA?si=It_zu1tl7-nOx84z" 
-          title="YouTube video player" 
-          frameBorder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerPolicy="strict-origin-when-cross-origin" 
-          allowFullScreen
-        ></iframe>
-      </div>
-      
       <div className={styles.content}>
+        
+        <div className={styles.videoWrapper}>
+          <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/vNHnjQEOBsA?si=It_zu1tl7-nOx84z" 
+            title="YouTube video player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin" 
+            allowFullScreen
+          ></iframe>
+        </div>
         <h1>Perceptar — A Speculative Interface for Spatial Imagination</h1>
+        <section className={styles.section}>
+          <h2>Technical Stack</h2>
+          <div className={styles.techStack}>
+            <span className={styles.techTag}>Unity</span>
+            <span className={styles.techTag}>VR Interaction Toolkit</span>
+            <span className={styles.techTag}>C#</span>
+            <span className={styles.techTag}>Custom Dialogue Engine</span>
+            <span className={styles.techTag}>Spatial Sound Design</span>
+            <span className={styles.techTag}>3D Modeling</span>
+          </div>
+        </section>
         
         <p>
           Perceptar is an experimental interface that explores how the body, space, and interaction can form a new grammar of creation. 
@@ -39,7 +50,7 @@ export default function PerceptarPage() {
         
         <div className={styles.features}>
           <h2>🔍 Core Features</h2>
-          <ul>
+          <ul className={styles.step}>
             <li>Embodied interaction: gesture-based scaling, drawing, teleportation</li>
             <li>Narrative AI system: reactive voice-driven guide</li>
             <li>Multi-scale environment: from intimate space to cosmic architecture</li>
@@ -91,7 +102,7 @@ export default function PerceptarPage() {
         <div className={styles.progress}>
           <div className={styles.column}>
             <h2>Previous Projects</h2>
-            <ul>
+            <ul className={styles.step}>
               <li>Gesture Recognition</li>
               <li>Building Game</li>
               <li>AR Place</li>
@@ -100,7 +111,7 @@ export default function PerceptarPage() {
           
           <div className={styles.column}>
             <h2>Current Progress</h2>
-            <ul>
+            <ul className={styles.step}>
               <li>Insights: gesture + function</li>
               <li>Prototype: VR → Draw rectangle/circle</li>
             </ul>

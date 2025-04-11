@@ -11,11 +11,13 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
 }
 
 * {
@@ -27,6 +29,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,7 +44,7 @@ a {
 
 :root {
   --radius: 0.5rem;
-  --background: oklch(1 0 0);
+  --background: oklch(0.99 0 0);
   --foreground: oklch(0.141 0.005 285.823);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);
@@ -68,6 +75,9 @@ a {
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.623 0.214 259.815);
+  --surface-100: oklch(0.99 0 0);
+  --surface-200: oklch(0.97 0 0);
+  --surface-300: oklch(0.95 0 0);
 }
 
 .dark {
@@ -102,8 +112,10 @@ a {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.488 0.243 264.376);
+  --surface-100: oklch(0.16 0.005 285.823);
+  --surface-200: oklch(0.18 0.005 285.823);
+  --surface-300: oklch(0.20 0.005 285.823);
 }
-
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -150,4 +162,65 @@ a {
   body {
     @apply bg-background text-foreground;
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium tracking-tight;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl mb-6;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl mb-4;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl mb-3;
+  }
+  
+  p {
+    @apply mb-4;
+  }
+}
+
+@layer components {
+  .grid-layout {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:translate-y-[-5px] hover:shadow-md;
+  }
+  
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+  
+  .container-narrow {
+    @apply max-w-3xl mx-auto px-4;
+  }
+  
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }

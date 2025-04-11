@@ -12,6 +12,18 @@ export default function EmbodiedInteractionPage() {
             Exploring the relationship between physical movement and digital interfaces
           </p>
         </section>
+
+        <section className={styles.section}>
+          <h2>Technical Stack</h2>
+          <div className={styles.techStack}>
+            <span className={styles.techTag}>Unity</span>
+            <span className={styles.techTag}>C#</span>
+            <span className={styles.techTag}>Motion Capture</span>
+            <span className={styles.techTag}>Computer Vision</span>
+            <span className={styles.techTag}>Spatial Computing</span>
+            <span className={styles.techTag}>Gesture Recognition</span>
+          </div>
+        </section>
         
         <section className={styles.section}>
           <h2>Project Overview</h2>
@@ -60,7 +72,7 @@ export default function EmbodiedInteractionPage() {
           <p>
             This project employs a mixed-methods approach combining technical development with user research:
           </p>
-          <ul>
+          <ul className={styles.step}>
             <li>Motion capture and gesture recognition using computer vision</li>
             <li>Spatial mapping to create responsive environments</li>
             <li>Iterative prototyping with diverse user groups</li>
@@ -73,14 +85,15 @@ export default function EmbodiedInteractionPage() {
         </section>
 
         <div className={styles.hero}>
-        <Image 
-          src="/projects/embodied-interaction/bg_img.png" 
-          alt="Embodied Interaction" 
-          fill
-          className={styles.heroImage}
-          priority
-        />
-      </div>
+          <Image 
+            src="/projects/embodied-interaction/bg_img.png" 
+            alt="Embodied Interaction" 
+            fill
+            className={styles.heroImage}
+            style={{ objectFit: 'contain', objectPosition: 'center' }}
+            priority
+          />
+        </div>
         
         <section className={styles.section}>
           <h2>Key Findings</h2>
@@ -139,6 +152,8 @@ export default function EmbodiedInteractionPage() {
             design that can inform the next generation of human-computer interfaces.
           </p>
         </section>
+
+       
       </div>
     </div>
   );

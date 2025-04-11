@@ -25,9 +25,9 @@ const NavBar = () => {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/practice" legacyBehavior passHref>
+            <Link href="/resume" legacyBehavior passHref>
               <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-lg`}>
-                Practice
+                Resume
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
@@ -38,13 +38,13 @@ const NavBar = () => {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          {/* <NavigationMenuItem>
             <Link href="/contact" legacyBehavior passHref>
               <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-lg`}>
                 Contact
               </NavigationMenuLink>
             </Link>
-          </NavigationMenuItem>
+          </NavigationMenuItem> */}
         </NavigationMenuList>
       </NavigationMenu>
     </header>

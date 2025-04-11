@@ -8,13 +8,6 @@
       "tags": ["Virtual Reality", "Rapid Prototyping", "Algorithm Ethic"]
     },
     {
-      "title": "Embodied Interaction",
-      "description": "Exploring the relationship between physical movement and digital interfaces through gesture-based interaction design.",
-      "imageUrl": "/projects/embodied_thumb_img.png",
-      "projectUrl": "/projects/embodied-interaction",
-      "tags": ["Interaction Design", "Gesture Recognition", "Physical Computing"]
-    },
-    {
       "title": "AltruData",
       "description": "A project leveraging trustworthy AI and confidential computing to generate reliable data for marketing analysis. ",
       "imageUrl": "/projects/altrudata/logo.png",
@@ -23,32 +16,32 @@
       "imageStyle": "fullWidthTopAligned"
     },
     {
-      "title": "A way out of Ontological World",
-      "description": "Exploring futurism, consciousness, and algorithm ethics in a philosophical context.",
-      "imageUrl": "/thumb-img.png",
-      "projectUrl": "/projects/ontological-world",
-      "tags": ["Futurism", "Consciousness", "Algorithm Ethic"]
-    } 
+      "title": "See Museum",
+      "description": "An AI-assisted online art museum that customizes exhibitions for users and employs AI agents to answer questions about artworks. I served as the front-end developer building core functionality for the exhibition show page.",
+      "imageUrl": "/projects/see-museum/thumb-img.png",
+      "projectUrl": "/projects/see-museum",
+      "tags": ["Front-end Development", "AI Integration", "Interactive Exhibitions", "User Experience"]
+    }
   ],
   "self_projects": [
     {
-      "title": "Mnemonic Movements",
-      "description": "Virtual reality experience focused on movement and memory using Quest Oculus and Unity.",
-      "imageUrl": "/thumb-img.png",
-      "projectUrl": "/projects/mnemonic-movements",
-      "tags": ["Quest Oculus", "Virtual Reality", "Unity"]
+      "title": "Embodied Interaction",
+      "description": "Exploring the relationship between physical movement and digital interfaces through gesture-based interaction design.",
+      "imageUrl": "/projects/embodied_thumb_img.png",
+      "projectUrl": "/projects/embodied-interaction",
+      "tags": ["Interaction Design", "Gesture Recognition", "Physical Computing"]
     },
     {
-      "title": "Object As Interface",
-      "description": "Exploring physical computing and interaction design through tangible interfaces.",
-      "imageUrl": "/thumb-img.png",
-      "projectUrl": "/projects/object-interface",
-      "tags": ["Physical Computing", "Interaction Design"]
+      "title": "A way out of Ontological World",
+      "description": "Exploring futurism, consciousness, and algorithm ethics in a philosophical context.",
+      "imageUrl": "/projects/ontological-world/thumb-img.png",
+      "projectUrl": "/projects/ontological-world",
+      "tags": ["Futurism", "Consciousness", "Algorithm Ethic"]
     },
     {
       "title": "Algorithm Ethic",
       "description": "Examining ethical considerations in algorithms through immersive experiences.",
-      "imageUrl": "/thumb-img.png",
+      "imageUrl": "/projects/algorithm-ethic/thumb-img.png",
       "projectUrl": "/projects/algorithm-ethic",
       "tags": ["Algorithm Ethic", "Immersive Experience"]
     },
@@ -58,20 +51,6 @@
       "imageUrl": "/thumb-img.png",
       "projectUrl": "/projects/real-unreal",
       "tags": ["Interaction Design", "Artificial Intelligence"]
-    },
-    {
-      "title": "Probability Space",
-      "description": "Research project exploring AI and generative design in spatial contexts.",
-      "imageUrl": "/thumb-img.png",
-      "projectUrl": "/projects/probability-space",
-      "tags": ["AI", "Generative AI", "Design Research"]
-    },
-    {
-      "title": "Simulation and Design",
-      "description": "Investigating creative technology and computational design through simulation.",
-      "imageUrl": "/thumb-img.png",
-      "projectUrl": "/projects/simulation-design",
-      "tags": ["Creative Technology", "Computational Design"]
     }
   ]
 }

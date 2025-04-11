@@ -1,7 +1,12 @@
+/* Import shared styles */
+@import '../shared/project-styles.module.css';
+
+/* Project-specific styles */
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  padding-top: 1em;
 }
 
 .videoWrapper {
@@ -23,7 +28,9 @@
 }
 
 .content {
-  padding: 0 1.5rem;
+  padding: 0;
+  /* Override max-width if needed */
+  max-width: inherit;
 }
 
 .content h1 {
@@ -52,28 +59,32 @@
   margin-bottom: 1.2rem;
 }
 
-.features, .tech, .research, .challenges, .progress, .future {
+/* Specific section spacing */
+.features, .tech, .research, .challenges, .future {
   margin-top: 2.5rem;
 }
 
+/* Custom list styling for features and progress */
 .features ul, .progress ul {
   list-style-type: none;
   padding-left: 0;
 }
 
 .features li, .progress li {
+  list-style-type: none;
   margin-bottom: 0.75rem;
   position: relative;
   padding-left: 1.5rem;
 }
 
 .features li:before, .progress li:before {
-  content: "•";
+  /* content: "•"; */
   position: absolute;
   left: 0;
   color: #666;
 }
 
+/* Progress section layout */
 .progress {
   display: flex;
   gap: 2rem;
@@ -101,4 +112,30 @@
   .content h3 {
     font-size: 1.2rem;
   }
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.techTag {
+  background: #e9e9e9;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.step {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid #0070f3;
+}
+
+.step h3 {
+  color: #0070f3;
+  margin-top: 0;
 } 

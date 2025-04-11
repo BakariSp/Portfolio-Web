@@ -3,8 +3,6 @@
 import Image from 'next/image';
 import { Card, CardContent } from "@/components/ui/card";
 import { useState } from 'react';
-import { ProjectGrid } from '@/components/projects/project-card';
-import projects from '@/data/projects.json';
 import ProjectPage from '../projects/page';
 const HomePage = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -13,7 +11,7 @@ const HomePage = () => {
     <div className={`flex-1 flex flex-col items-center justify-center gap-8 p-6 md:p-10 lg:p-16 xl:p-20`}>
       <h1 className="text-4xl font-bold">Linghang Cai</h1>
       <p className="text-muted-foreground text-lg">Exploring the 3D space and interaction</p>
-      <Card className="w-full border-none shadow-none">
+      <Card className="w-full border-none shadow-none bg-transparent">
         <CardContent className="p-6">
           <div 
             className="flex justify-center relative"
