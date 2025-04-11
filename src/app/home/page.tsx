@@ -18,12 +18,13 @@ const HomePage = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <div className="relative w-full max-w-[500px] h-[300px] mx-auto">
+            <div className="relative w-full max-w-[500px] aspect-[5/3] mx-auto">
               <Image 
                 src="/portrait_diagram.png" 
                 alt="3D Interaction"
                 fill
                 priority
+                style={{ objectFit: 'contain' }}
                 className={`rounded-md transition-opacity duration-300 ease-in-out ${isHovered ? 'opacity-0' : 'opacity-100'}`}
               />
               <Image 
@@ -31,6 +32,7 @@ const HomePage = () => {
                 alt="3D Interaction Selected"
                 fill
                 priority
+                style={{ objectFit: 'contain' }}
                 className={`rounded-md transition-opacity duration-300 ease-in-out absolute top-0 left-0 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
               />
             </div>
