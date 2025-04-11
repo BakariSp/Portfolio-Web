@@ -90,7 +90,7 @@ export default function PerceptarPage() {
                 width={800}
                 height={600}
               />
-              <p className={styles.caption}>Mapping function translating user's mental model to actual spatial coordinates</p>
+              <p className={styles.caption}>Mapping function translating user&apos;s mental model to actual spatial coordinates</p>
             </div>
           </div>
 
@@ -166,7 +166,7 @@ export default function PerceptarPage() {
                 <p>
                   Our research revealed that users often draw based on their mental model of space rather than 
                   physical reality. Prototype 2 introduced a sophisticated mapping function that translates 
-                  gestures from the user's perspective to the correct position in virtual space.
+                  gestures from the user&apos;s perspective to the correct position in virtual space.
                 </p>
                 <p>
                   This allows users to draw walls and structures as they imagine them, with the system 
@@ -195,8 +195,8 @@ export default function PerceptarPage() {
                 </p>
                 <ul>
                   <li>Distance control for manipulating objects regardless of proximity</li>
-                  <li>Object transformation controls, including the ability to scale and "explode" large structures</li>
-                  <li>Free-form drawing to create "keystones"—platforms that users can traverse</li>
+                  <li>Object transformation controls, including the ability to scale and &quot;explode&quot; large structures</li>
+                  <li>Free-form drawing to create &quot;keystones&quot;—platforms that users can traverse</li>
                   <li>Integrated spatial audio that responds to user creations and movements</li>
                 </ul>
                 <p>
