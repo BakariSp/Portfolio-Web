@@ -21,6 +21,13 @@
       "imageUrl": "/projects/see-museum/thumb-img.png",
       "projectUrl": "/projects/see-museum",
       "tags": ["Front-end Development", "AI Integration", "Interactive Exhibitions", "User Experience"]
+    },
+    {
+      "title": "EV and Air Quality",
+      "description": "A data visualization project showcasing the impact of electric vehicles on air quality in China, based on research published in Nature Sustainability.",
+      "imageUrl": "/projects/ev-air-quality/thumb_img.png",
+      "projectUrl": "/projects/ev-air-quality",
+      "tags": ["Data Visualization", "UIUX Lead", "Environmental Impact", "Research Collaboration"]
     }
   ],
   "self_projects": [
@@ -44,13 +51,6 @@
       "imageUrl": "/projects/algorithm-ethic/thumb-img.png",
       "projectUrl": "/projects/algorithm-ethic",
       "tags": ["Algorithm Ethic", "Immersive Experience"]
-    },
-    {
-      "title": "Real To Unreal",
-      "description": "Bridging real and virtual worlds through interaction design and artificial intelligence.",
-      "imageUrl": "/thumb-img.png",
-      "projectUrl": "/projects/real-unreal",
-      "tags": ["Interaction Design", "Artificial Intelligence"]
     }
   ]
 }

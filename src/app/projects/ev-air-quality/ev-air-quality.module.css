@@ -1,0 +1,174 @@
+/* Import shared styles */
+@import '../shared/project-styles.module.css';
+
+/* Project-specific styles */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-color: #0a0a0a;
+}
+
+.heroImage {
+  opacity: 0.8;
+  object-fit: cover;
+}
+
+.heroContent {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 10;
+  max-width: 800px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.externalLink {
+  display: inline-block;
+  background: #0070f3;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.externalLink:hover {
+  background: #0051b3;
+  transform: translateY(-2px);
+}
+
+/* Custom styles for data visualization elements */
+.dataViz {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dataViz h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.dataViz p {
+  color: #555;
+}
+
+/* Map visualization container */
+.mapContainer {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Legend styles */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legendColor {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.legendLabel {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .mapContainer {
+    height: 350px;
+  }
+  
+  .legend {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.videoFrame {
+  display: block;
+  border: none;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+} 
