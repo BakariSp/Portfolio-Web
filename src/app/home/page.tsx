@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useState } from 'react';
 import { ProjectGrid } from '@/components/projects/project-card';
 import projects from '@/data/projects.json';
-
+import ProjectPage from '../projects/page';
 const HomePage = () => {
   const [isHovered, setIsHovered] = useState(false);
   
@@ -42,7 +42,8 @@ const HomePage = () => {
       
       <div className="w-full mt-12">
         <h2 className="text-3xl font-bold mb-8">My Projects</h2>
-        <ProjectGrid projects={projects} />
+        {/* <ProjectGrid projects={projects.current_projects} /> */}
+        <ProjectPage />
       </div>
     </div>
   );

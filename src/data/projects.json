@@ -1,65 +1,77 @@
-[
-  {
-    "title": "Perceptar - Virtual Reality Experience",
-    "description": "A virtual reality experience exploring the concept of a 'Perceptar' - a creature that exists in the intersection of human and animal consciousness.",
-    "imageUrl": "/projects/thumb-img.png",
-    "projectUrl": "/projects/perceptar",
-    "tags": ["Virtual Reality", "Consciousness", "Algorithm Ethic"]
-  },
-  {
-    "title": "A way out of Ontological World",
-    "description": "Exploring futurism, consciousness, and algorithm ethics in a philosophical context.",
-    "imageUrl": "/thumb-img.png",
-    "projectUrl": "/projects/ontological-world",
-    "tags": ["Futurism", "Consciousness", "Algorithm Ethic"]
-  },
-  {
-    "title": "Mnemonic Movements",
-    "description": "Virtual reality experience focused on movement and memory using Quest Oculus and Unity.",
-    "imageUrl": "/thumb-img.png",
-    "projectUrl": "/projects/mnemonic-movements",
-    "tags": ["Quest Oculus", "Virtual Reality", "Unity"]
-  },
-  {
-    "title": "Object As Interface",
-    "description": "Exploring physical computing and interaction design through tangible interfaces.",
-    "imageUrl": "/thumb-img.png",
-    "projectUrl": "/projects/object-interface",
-    "tags": ["Physical Computing", "Interaction Design"]
-  },
-  {
-    "title": "Virtual Windows",
-    "description": "Creating virtual windows using generative AI, touch design, and projection technology.",
-    "imageUrl": "/thumb-img.png",
-    "projectUrl": "/projects/virtual-windows",
-    "tags": ["Generative AI", "Touch Design", "Projection"]
-  },
-  {
-    "title": "Algorithm Ethic",
-    "description": "Examining ethical considerations in algorithms through immersive experiences.",
-    "imageUrl": "/thumb-img.png",
-    "projectUrl": "/projects/algorithm-ethic",
-    "tags": ["Algorithm Ethic", "Immersive Experience"]
-  },
-  {
-    "title": "Real To Unreal",
-    "description": "Bridging real and virtual worlds through interaction design and artificial intelligence.",
-    "imageUrl": "/thumb-img.png",
-    "projectUrl": "/projects/real-unreal",
-    "tags": ["Interaction Design", "Artificial Intelligence"]
-  },
-  {
-    "title": "Probability Space",
-    "description": "Research project exploring AI and generative design in spatial contexts.",
-    "imageUrl": "/thumb-img.png",
-    "projectUrl": "/projects/probability-space",
-    "tags": ["AI", "Generative AI", "Design Research"]
-  },
-  {
-    "title": "Simulation and Design",
-    "description": "Investigating creative technology and computational design through simulation.",
-    "imageUrl": "/thumb-img.png",
-    "projectUrl": "/projects/simulation-design",
-    "tags": ["Creative Technology", "Computational Design"]
-  }
-] 
+{
+  "current_projects": [
+    {
+      "title": "Perceptar - Virtual Reality Experience",
+      "description": "A virtual reality experience exploring the concept of a 'Perceptar' - a creature that exists in the intersection of human and animal consciousness.",
+      "imageUrl": "/projects/thumb-img.png",
+      "projectUrl": "/projects/perceptar",
+      "tags": ["Virtual Reality", "Rapid Prototyping", "Algorithm Ethic"]
+    },
+    {
+      "title": "Embodied Interaction",
+      "description": "Exploring the relationship between physical movement and digital interfaces through gesture-based interaction design.",
+      "imageUrl": "/projects/embodied_thumb_img.png",
+      "projectUrl": "/projects/embodied-interaction",
+      "tags": ["Interaction Design", "Gesture Recognition", "Physical Computing"]
+    },
+    {
+      "title": "AltruData",
+      "description": "A project leveraging trustworthy AI and confidential computing to generate reliable data for marketing analysis. ",
+      "imageUrl": "/projects/altrudata/logo.png",
+      "projectUrl": "/projects/altrudata",
+      "tags": ["Trustworthy AI", "Confidential Computing", "Lead of UIUX", "Marketing Analytics"],
+      "imageStyle": "fullWidthTopAligned"
+    },
+    {
+      "title": "A way out of Ontological World",
+      "description": "Exploring futurism, consciousness, and algorithm ethics in a philosophical context.",
+      "imageUrl": "/thumb-img.png",
+      "projectUrl": "/projects/ontological-world",
+      "tags": ["Futurism", "Consciousness", "Algorithm Ethic"]
+    } 
+  ],
+  "self_projects": [
+    {
+      "title": "Mnemonic Movements",
+      "description": "Virtual reality experience focused on movement and memory using Quest Oculus and Unity.",
+      "imageUrl": "/thumb-img.png",
+      "projectUrl": "/projects/mnemonic-movements",
+      "tags": ["Quest Oculus", "Virtual Reality", "Unity"]
+    },
+    {
+      "title": "Object As Interface",
+      "description": "Exploring physical computing and interaction design through tangible interfaces.",
+      "imageUrl": "/thumb-img.png",
+      "projectUrl": "/projects/object-interface",
+      "tags": ["Physical Computing", "Interaction Design"]
+    },
+    {
+      "title": "Algorithm Ethic",
+      "description": "Examining ethical considerations in algorithms through immersive experiences.",
+      "imageUrl": "/thumb-img.png",
+      "projectUrl": "/projects/algorithm-ethic",
+      "tags": ["Algorithm Ethic", "Immersive Experience"]
+    },
+    {
+      "title": "Real To Unreal",
+      "description": "Bridging real and virtual worlds through interaction design and artificial intelligence.",
+      "imageUrl": "/thumb-img.png",
+      "projectUrl": "/projects/real-unreal",
+      "tags": ["Interaction Design", "Artificial Intelligence"]
+    },
+    {
+      "title": "Probability Space",
+      "description": "Research project exploring AI and generative design in spatial contexts.",
+      "imageUrl": "/thumb-img.png",
+      "projectUrl": "/projects/probability-space",
+      "tags": ["AI", "Generative AI", "Design Research"]
+    },
+    {
+      "title": "Simulation and Design",
+      "description": "Investigating creative technology and computational design through simulation.",
+      "imageUrl": "/thumb-img.png",
+      "projectUrl": "/projects/simulation-design",
+      "tags": ["Creative Technology", "Computational Design"]
+    }
+  ]
+}

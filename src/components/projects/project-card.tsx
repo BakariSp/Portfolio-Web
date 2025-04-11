@@ -11,6 +11,7 @@ interface ProjectCardProps {
   projectUrl: string;
   tags?: string[];
   className?: string;
+  imageStyle?: string;
 }
 
 export function ProjectCard({
@@ -20,19 +21,31 @@ export function ProjectCard({
   projectUrl,
   tags = [],
   className,
+  imageStyle,
 }: ProjectCardProps) {
+  
   return (
     <Link href={projectUrl} className="block group">
       <div className={cn(
         "h-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] dark:border-gray-800 dark:bg-gray-900",
         className
       )}>
-        <div className="relative h-56 w-full overflow-hidden">
+        <div className={cn(
+          "relative h-56 w-full overflow-hidden",
+        )}>
           <Image
-            src= {imageUrl || "/thumb-img.png"}
+            src={imageUrl || "/thumb-img.png"}
             alt={title}
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            width={1200}
+            height={600}
+            className={cn(
+              "w-full h-full object-cover transition-transform duration-300 group-hover:scale-105",
+              imageStyle === "fullWidthTopAligned" ? "object-top" : "object-center"
+            )}
+            style={{ 
+              objectFit: "cover",
+              objectPosition: imageStyle === "fullWidthTopAligned" ? "center top" : "center center" 
+            }}
           />
         </div>
         <div className="p-5">
@@ -57,9 +70,12 @@ export function ProjectCard({
 }
 
 export function ProjectGrid({ projects }: { projects: ProjectCardProps[] }) {
+  // Add a safety check to ensure projects is an array
+  const projectsArray = Array.isArray(projects) ? projects : [];
+  
   return (
     <div className={`grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 ${layoutConfig.containerMax}`}>
-      {projects.map((project, index) => (
+      {projectsArray.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}
     </div>
